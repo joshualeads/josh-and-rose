@@ -51,14 +51,14 @@ function Events() {
             </div>
 
             <div className="section-block">
-              <h3 className="my-3">Bangalore Reception</h3>
+              <h3 className="my-3 text-sm-center">Bangalore Reception</h3>
 
-              <p className="mb-2">
+              <p className="mb-2 text-sm-center">
                 <i className="bi-geo-alt me-1"></i>
                 5th Avenue at, Central Park S
               </p>
 
-              <p>
+              <p className="text-sm-center">
                 <i className="bi-clock me-1"></i>
                 5:00 PM
               </p>
@@ -71,14 +71,14 @@ function Events() {
             </div>
 
             <div className="section-block">
-              <h3 className="my-3">Chennai Reception</h3>
+              <h3 className="my-3 text-sm-center">Chennai Reception</h3>
 
               <p className="mb-2">
-                <i className="bi-geo-alt me-1"></i>
+                <i className="bi-geo-alt me-1 text-sm-center"></i>
                 5th Avenue at, Central Park S
               </p>
 
-              <p>
+              <p className="text-sm-center">
                 <i className="bi-clock me-1"></i>
                 5:00 PM
               </p>
@@ -97,9 +97,9 @@ function Events() {
             ></iframe>
 
             <div className="section-block">
-              <h3 className="my-3">Location</h3>
+              <h3 className="my-3 text-sm-center">Location</h3>
 
-              <p className="mb-2">
+              <p className="mb-2 text-sm-center">
                 <i className="bi-geo-alt me-1"></i>
                 5th Avenue at, Central Park S, New York, NY 10019, United States
               </p>
