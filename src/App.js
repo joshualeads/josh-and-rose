@@ -28,7 +28,6 @@ function App() {
   function triggerToggleMenu(event) {
     console.log(event);
     console.log("current toggle state ", toggle);
-    window.scrollTo(0, 0);
     toggleMenu(!toggle);
   }
 

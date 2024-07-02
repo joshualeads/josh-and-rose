@@ -10,24 +10,38 @@ function OffCanvasMenu(props) {
         </div>
         <ul className="" id="" style={{ touchAction: "pan-y" }}>
           <li className="active">
-            <a href="#home">Home</a>
+            <a href="#home" onClick={props.toggleMenu}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="#story" className="fh5co-sub-ddown sf-with-ul">
+            <a
+              href="#story"
+              onClick={props.toggleMenu}
+              className="fh5co-sub-ddown sf-with-ul"
+            >
               Groom &amp; Bride
             </a>
           </li>
           <li>
-            <a href="#event">When &amp; Where</a>
+            <a href="#event" onClick={props.toggleMenu}>
+              When &amp; Where
+            </a>
           </li>
           <li>
-            <a href="#family">Family</a>
+            <a href="#family" onClick={props.toggleMenu}>
+              Family
+            </a>
           </li>
           <li>
-            <a href="#gallery">Gallery</a>
+            <a href="#gallery" onClick={props.toggleMenu}>
+              Gallery
+            </a>
           </li>
           <li>
-            <a href="#contact">;Contact Us</a>
+            <a href="#contact" onClick={props.toggleMenu}>
+              Contact Us
+            </a>
           </li>
         </ul>
       </nav>
