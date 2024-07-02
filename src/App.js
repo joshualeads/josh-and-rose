@@ -16,8 +16,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 // Import for Nuptail theme usage
-import "../../develop/src/styles/nuptail/superfish.css"; // For Mega Mega Menu Links
-import "../../develop/src/styles/nuptail/styles.scss";
+import "./styles/nuptail/superfish.css"; // For Mega Mega Menu Links
+import "./styles/nuptail/styles.scss";
 
 // Import for tooplate theme usage
 import "./styles/tooplate/styles.scss";
