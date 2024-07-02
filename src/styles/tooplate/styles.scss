@@ -1,0 +1,625 @@
+/*---------------------------------------
+    SECTION TITLE               
+  -----------------------------------------*/
+.section-title-wrap {
+  display: block;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+.section-title-line {
+  background: var(--border-color);
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 2px;
+  margin: 0 auto;
+}
+
+.section-title-icon {
+  color: var(--primary-color);
+  font-size: var(--h5-font-size);
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+/*---------------------------------------
+    PRE LOADER               
+  -----------------------------------------*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 var(--white-color);
+}
+
+.spinner {
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+
+.spinner svg {
+  fill: var(--primary-color);
+  font-size: var(--h4-font-size);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/*---------------------------------------
+    IMAGE HOVER               
+  -----------------------------------------*/
+.image-hover-thumb {
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.image-hover-thumb:hover .img-fluid {
+  transform: scale(1.05);
+}
+
+.image-hover-thumb .img-fluid {
+  border-radius: var(--border-radius-small);
+  display: block;
+  transition: all 0.5s;
+}
+
+/*---------------------------------------
+    CUSTOM BUTTON               
+  -----------------------------------------*/
+.custom-btn {
+  background: var(--custom-btn-bg-color);
+  border: 0;
+  color: var(--white-color);
+  font-family: var(--title-font-family);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  padding: 12px 24px;
+}
+
+.custom-btn::after {
+  content: "";
+  background: var(--icon-color);
+  border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 30px;
+  height: 20px;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+.custom-btn:hover::after {
+  transform: translate(0);
+}
+
+.custom-btn:hover {
+  background: var(--secondary-color);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  color: var(--white-color);
+}
+
+/*---------------------------------------
+    SAVE THE DATE              
+  -----------------------------------------*/
+.save-the-date-thumb {
+  background: var(--white-color);
+  border-radius: var(--border-radius-small);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.save-the-date-title {
+  background: var(--primary-color);
+  color: var(--white-color);
+  margin-bottom: 0;
+  padding: 10px 20px;
+}
+
+.save-the-date-body {
+  padding: 15px 20px;
+}
+
+/*---------------------------------------
+    THE WEDDING              
+  -----------------------------------------*/
+.google-map {
+  border-radius: var(--border-radius-small);
+  display: block;
+  line-height: normal;
+}
+
+/*---------------------------------------
+    ABOUT              
+  -----------------------------------------*/
+.about-info-wrap {
+  height: 100%;
+  padding: 20px;
+}
+
+.about-tag {
+  font-weight: var(--font-weight-light);
+  //text-transform: uppercase;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+  margin-top: 20px;
+}
+
+.nav-tabs .nav-link {
+  color: var(--p-color);
+  display: block;
+  text-align: left;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 0;
+  border: 0;
+  border-right: 2px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  width: 100%;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.nav-tabs .nav-link:last-child {
+  border-bottom: 0;
+}
+
+.nav-tabs .nav-link::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  transition: all 250ms ease-in-out;
+  text-decoration: none;
+  color: transparent;
+  top: 50%;
+  right: -11px;
+  transform: translate(0, -50%) rotate(135deg);
+}
+
+.nav-tabs .nav-link.active::after {
+  background: var(--white-color);
+  border-top-color: var(--secondary-color);
+  border-left-color: var(--secondary-color);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus {
+  border-color: var(--border-color);
+  border-right-color: var(--secondary-color);
+}
+
+.nav-tabs .nav-link.active h3,
+.nav-tabs .nav-link:focus h3,
+.nav-tabs .nav-link:hover h3 {
+  color: var(--primary-color);
+}
+
+/*---------------------------------------
+    GALLERY              
+  -----------------------------------------*/
+.gallery-thumb,
+.people-thumb {
+  margin-bottom: 24px;
+}
+
+.gallery-thumb-small {
+  height: 100%;
+}
+
+.gallery-thumb-small .gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*---------------------------------------
+    RSVP              
+  -----------------------------------------*/
+.rsvp-section {
+  background-image: url("../../images/tooplate/closeup-shot-newlywed-couple-sitting-bench.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.rsvp-form-wrap {
+  background: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  padding: 50px;
+}
+
+/*---------------------------------------
+    CUSTOM FORM               
+  -----------------------------------------*/
+.custom-form .form-control {
+  background: var(--white-color);
+  box-shadow: none;
+  border: 2px solid var(--border-color);
+  color: var(--p-color);
+  font-weight: var(--font-weight-light);
+
+  margin-bottom: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.input::placeholder,
+.form-select {
+  border: 2px solid var(--border-color);
+  color: var(--p-color);
+  font-weight: var(--font-weight-light);
+
+  margin-bottom: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.custom-form .form-control:hover,
+.custom-form .form-control:focus {
+  background: var(--section-bg-color);
+  border-color: var(--border-color);
+}
+
+.custom-form button[type="submit"] {
+  background: var(--primary-color);
+  border: none;
+  color: var(--white-color);
+  font-size: var(--p-font-size);
+  font-family: var(--title-font-family);
+  font-weight: var(--font-weight-bold);
+  transition: all 0.3s;
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-form button[type="submit"]:hover,
+.custom-form button[type="submit"]:focus {
+  background: var(--secondary-color);
+  border-color: transparent;
+}
+
+.custom-form button[type="submit"]::after {
+  content: "";
+  background: var(--icon-color);
+  border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 30px;
+  height: 20px;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+.custom-form button[type="submit"]:hover::after {
+  transform: translate(0);
+}
+
+/*---------------------------------------
+    SITE FOOTER              
+  -----------------------------------------*/
+.site-footer {
+  background-image: url("../../images/tooplate/young-asian-pregnant-couple-using-laptop.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+  position: relative;
+}
+
+.site-footer::after {
+  content: "";
+  background: var(--primary-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.site-footer .navbar-brand {
+  color: var(--white-color);
+  position: relative;
+  z-index: 2;
+}
+
+.copyright-text {
+  font-size: var(--copyright-font-size);
+}
+
+/*---------------------------------------
+    SOCIAL ICON               
+  -----------------------------------------*/
+.social-icon {
+  margin: 0;
+  padding: 0;
+}
+
+.social-icon-item {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.social-icon-link {
+  background: var(--secondary-color);
+  border-radius: var(--border-radius-large);
+  font-size: var(--menu-font-size);
+  color: var(--dark-color);
+  display: inline-block;
+  vertical-align: top;
+  margin: 4px;
+  width: 30px;
+  line-height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-icon-link:hover {
+  color: var(--white-color);
+}
+
+/*---------------------------------------
+    RESPONSIVE STYLES               
+  -----------------------------------------*/
+@media screen and (max-width: 1200px) {
+  .hero-container {
+    background-size: contain;
+    background-position: bottom;
+  }
+}
+
+@media only screen and (min-width: 580px) and (max-width: 1170px) {
+  .hero-container {
+    height: inherit;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .the-wedding-section .image-hover-thumb,
+  .the-wedding-section .google-map {
+    height: 55%;
+  }
+
+  .the-wedding-section .section-block {
+    height: 45%;
+  }
+
+  .save-the-date-thumb {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  .section-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .custom-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .navbar {
+    background: var(--white-color);
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding-bottom: 0;
+  }
+
+  .hero-container {
+    padding: 40px;
+    min-height: 650px;
+  }
+
+  .about-info-wrap {
+    padding: 10px 20px 40px 20px;
+  }
+
+  .site-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .nav-tabs {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .nav-tabs .nav-link {
+    border-bottom: 2px solid var(--border-color);
+    width: 50%;
+    text-align: center;
+  }
+
+  .nav-tabs .nav-link:last-child {
+    border-bottom: 2px solid var(--border-color);
+  }
+
+  .nav-tabs .nav-link:last-child {
+    border-right: 0;
+  }
+
+  .nav-tabs .nav-link::after {
+    top: inherit;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(225deg);
+    bottom: -11px;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-link:focus {
+    border-color: var(--border-color);
+    border-right-color: var(--border-color);
+    border-bottom-color: var(--secondary-color);
+  }
+
+  .people-thumb {
+    margin-bottom: 0;
+  }
+
+  .people-section .section-block {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero-container {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  .hero-container {
+    padding: 30px;
+  }
+}
+
+/* Custom Styling */
+:root {
+  --white-color: #ffffff;
+  --primary-color: #ff5500;
+  --secondary-color: #f1c522;
+  --section-bg-color: #f9f9f9;
+  --custom-btn-bg-color: #cb7575;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #e9eaeb;
+  --icon-color: #28856b;
+
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
+}
+
+.about-section {
+  .section-title-wrap {
+    .section-title {
+      margin-bottom: 0px;
+      font-size: 2.5rem;
+    }
+  }
+  .about-info-title {
+    flex-direction: column;
+    h4 {
+      font-size: 2.5rem;
+      margin-bottom: 0px;
+    }
+  }
+  .description {
+    text-align: center;
+  }
+  .social-icon-wrap {
+    display: flex;
+    margin: 0px auto;
+  }
+}
+
+#section_3 {
+  margin-top: 7%;
+}
