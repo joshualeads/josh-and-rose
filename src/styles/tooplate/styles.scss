@@ -628,3 +628,29 @@
 .section-title {
   font-size: 2.5rem;
 }
+
+.flip-clock {
+  margin-top: 2.5rem;
+  justify-content: center;
+  --fcc-flip-duration: 0.5s; /* transition duration when flip card */
+  --fcc-spacing: 0.5rem; /* space between unit times and separators */
+  --fcc-digit-block-width: 2rem; /* width of digit card */
+  --fcc-digit-block-height: 3rem; /* height of digit card, highly recommend in even number */
+  --fcc-digit-block-radius: 5px; /* border radius of digit card */
+  --fcc-digit-block-spacing: 0.3rem; /* space between blocks in each unit of time */
+  --fcc-digit-font-size: 2rem; /* font size of digit */
+  --fcc-digit-color: white; /* color of digit */
+  --fcc-label-font-size: 1rem; /* font size of label */
+  --fcc-label-color: #ffffff; /* color of label */
+  --fcc-background: black; /* background of digit card */
+  --fcc-divider-color: white; /* color of divider */
+  --fcc-divider-height: 0px; /* height of divider */
+  --fcc-separator-size: 6px; /* size of colon */
+  --fcc-separator-color: #fff; /* color of colon */
+}
+
+.event-complete {
+  color: #fff;
+  margin-top: 2.5rem;
+  display: block;
+}
