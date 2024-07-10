@@ -11,6 +11,7 @@ import Gallery from "./components/Gallery";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import ScrollTop from "./components/ScrollTop";
+import AudioPlayer from "./components/AudioPlayer";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -48,6 +49,7 @@ function App() {
               toggleState={toggle}
             />
             <Footer />
+            <AudioPlayer />
           </div>
         </div>
       </div>

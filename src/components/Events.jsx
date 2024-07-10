@@ -1,5 +1,6 @@
 import Wedding from "./../images/tooplate/decorated-table-setting-wedding-celebration.jpg";
 import Reception_Bangalore from "./../images/tooplate/front-view-wedding-couple.jpg";
+import Chennai_Event from "../images/tooplate/chennai_event.jpeg";
 
 function Events() {
   return (
@@ -31,16 +32,18 @@ function Events() {
             </div>
 
             <div className="section-block">
-              <h3 className="my-3">Wedding Ceremony</h3>
+              <h3 className="my-3 text-sm-center event-name">
+                Wedding Ceremony
+              </h3>
 
-              <p className="mb-2">
+              <p className="mb-2 address text-sm-center">
                 <i className="bi-geo-alt me-1"></i>
-                5th Avenue at, Central Park S
+                Emmanuel Church, Cooke Town
               </p>
 
-              <p>
+              <p className="text-sm-center time">
                 <i className="bi-clock me-1"></i>
-                6:30 PM to 9:30 PM
+                10:30 AM to 11:30 AM
               </p>
             </div>
           </div>
@@ -51,44 +54,48 @@ function Events() {
             </div>
 
             <div className="section-block">
-              <h3 className="my-3 text-sm-center">Bangalore Reception</h3>
+              <h3 className="my-3 text-sm-center event-name">
+                Bangalore Reception
+              </h3>
 
-              <p className="mb-2 text-sm-center">
+              <p className="mb-2 text-sm-center address">
                 <i className="bi-geo-alt me-1"></i>
-                5th Avenue at, Central Park S
+                CMA Grand Convention & Wedding Hall
               </p>
 
-              <p className="text-sm-center">
+              <p className="text-sm-center time">
                 <i className="bi-clock me-1"></i>
-                5:00 PM
+                6:00 PM
               </p>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-6 col-12 d-flex flex-column mb-4 mb-lg-0 mb-md-0">
             <div className="image-hover-thumb">
-              <img src={Wedding} className="img-fluid" alt="" />
+              <img src={Chennai_Event} className="img-fluid" alt="" />
             </div>
 
             <div className="section-block">
-              <h3 className="my-3 text-sm-center">Chennai Reception</h3>
+              <h3 className="my-3 text-sm-center event-name">
+                Chennai Reception
+              </h3>
 
-              <p className="mb-2">
+              <p className="mb-2 text-sm-center address">
                 <i className="bi-geo-alt me-1 text-sm-center"></i>
-                5th Avenue at, Central Park S
+                Anand Farms, Ayappakkam
               </p>
 
-              <p className="text-sm-center">
+              <p className="text-sm-center time">
                 <i className="bi-clock me-1"></i>
                 5:00 PM
               </p>
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6 col-12 d-flex flex-column">
+          {/* <div className="col-lg-4 col-md-6 col-12 d-flex flex-column">
             <iframe
               className="google-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8046.475092226252!2d-73.9752829999323!3d40.766655075110314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f07d5da561%3A0x61f6aa300ba8339d!2sThe%20Plaza!5e1!3m2!1sen!2ssg!4v1662129560604!5m2!1sen!2ssg"
+              src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAYacQQrgjdOvCrv6DRyTyauENzNf4DCyk&q=Emmanuel+Church+Cooke+Town,Bengaluru+India"
               width="100%"
               height="310"
               allowFullScreen=""
@@ -97,14 +104,14 @@ function Events() {
             ></iframe>
 
             <div className="section-block">
-              <h3 className="my-3 text-sm-center">Location</h3>
+              <h3 className="my-3 text-sm-center event-name">Location</h3>
 
-              <p className="mb-2 text-sm-center">
+              <p className="mb-2 text-sm-center address">
                 <i className="bi-geo-alt me-1"></i>
                 5th Avenue at, Central Park S, New York, NY 10019, United States
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -260,10 +260,22 @@ figure {
 .fh5co-cover {
   background-image: url("../../images/nuptail/cover_bg_1.jpg");
   background-size: cover;
+  background-position: left;
   position: relative;
   @media screen and (max-width: $screen-sm) {
-    heifght: inherit;
+    @keyframes animatedBackground {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: right;
+      }
+    }
+
+    height: inherit;
     padding: 3em 0;
+    background-size: auto;
+    //animation: animatedBackground 30s linear infinite;
   }
   .display-t {
     display: table;
@@ -1032,7 +1044,7 @@ figure {
       list-style: none;
       a {
         font-size: 16px;
-        color: rgba(255, 255, 255, 0.4);
+        color: rgb(255, 255, 255);
         text-decoration: none;
         &:hover {
           color: $brand-primary;
@@ -1098,6 +1110,9 @@ figure {
       position: absolute;
       left: 0;
       @include transition(0.2s);
+    }
+    &::after {
+      height: 2px;
     }
   }
   &.dark {
@@ -1377,7 +1392,7 @@ $color_1: #fff;
   //visibility: hidden;
   //opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 70px;
   z-index: 99999;
   background: #a90000;
   width: 44px;
@@ -1399,4 +1414,92 @@ $color_1: #fff;
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
+}
+
+.bg-audio {
+  position: fixed;
+  //visibility: hidden;
+  //opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #a90000;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.4s;
+  i {
+    font-size: 24px;
+    color: #ebebeb;
+    line-height: 0;
+  }
+  &:hover {
+    background: #ec2727;
+    color: #ebebeb;
+  }
+}
+
+.bg-audio.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.firefly {
+  width: 5px;
+  height: 5px;
+  background: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgb(221, 248, 167);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  animation: ease 200s alternate infinite;
+
+  @keyframes drift {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes flash {
+    0%,
+    30%,
+    100% {
+      opacity: 1;
+      box-shadow: 0 0 0vw 0vw yellow;
+    }
+
+    5% {
+      opacity: 1;
+      box-shadow: 0 0 2vw 0.4vw yellow;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform-origin: -10vw;
+  }
+
+  &::before {
+    background: rgb(228, 146, 146);
+    opacity: 1;
+    animation: drift ease alternate infinite;
+  }
+
+  &::after {
+    background: white;
+    opacity: 1;
+    box-shadow: 0 0 0vw 0vw rgb(255, 255, 0);
+    animation: drift ease alternate infinite, flash ease infinite;
+  }
 }

@@ -1,48 +1,12 @@
-// import Countdown from "react-countdown";
+import React, { useState, useEffect } from "react";
 import FlipperCountDown from "./FlipperCounter";
-
-// const Completionist = () => (
-//   <div className="single_countdown">
-//     <span>Thank you all for your Blessing and Support!</span>
-//   </div>
-// );
-
-// // Renderer callback with condition
-// const renderer = ({ days, hours, minutes, seconds, completed }) => {
-//   if (completed) {
-//     // Render a completed state
-//     return <Completionist />;
-//   } else {
-//     // Render a countdown
-//     return (
-//       <div className="countDownArea col-lg-6 col-md-6 col-sm-12">
-//         <div className="countdown_wrap d-flex">
-//           <div className="single_countdown">
-//             <div>{days}</div>
-//             <span>Days</span>
-//           </div>
-
-//           <div className="single_countdown">
-//             <div>{hours}</div>
-//             <span>Hours</span>
-//           </div>
-
-//           <div className="single_countdown">
-//             <div>{minutes}</div>
-//             <span>Minutes</span>
-//           </div>
-
-//           <div className="single_countdown">
-//             <div>{seconds}</div>
-//             <span>Seconds</span>
-//           </div>
-//         </div>
-//       </div>
-//     );
-//   }
-// };
+import FireFly from "./firefly";
 
 function Hero() {
+  useEffect(() => {
+    FireFly();
+  }, []);
+
   return (
     <>
       <div className="fh5co-hero" data-section="home" id={"home"}>

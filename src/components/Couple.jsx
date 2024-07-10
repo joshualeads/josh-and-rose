@@ -1,4 +1,4 @@
-import Groom from "./../images/tooplate/vertical-shot-young-handsome-guy-autumn-park.jpg";
+import Groom from "./../images/tooplate/vertical-shot-young-handsome-guy-autumn-park.jpeg";
 import Bride from "./../images/tooplate/vertical-shot-beautiful-smiling-girl.jpg";
 
 function Couple() {

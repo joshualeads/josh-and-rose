@@ -229,7 +229,7 @@
 .nav-tabs .nav-link.active h3,
 .nav-tabs .nav-link:focus h3,
 .nav-tabs .nav-link:hover h3 {
-  color: var(--primary-color);
+  color: var(--primary-color-tab);
 }
 
 /*---------------------------------------
@@ -584,6 +584,7 @@
 :root {
   --white-color: #ffffff;
   --primary-color: #ff5500;
+  --primary-color-tab: #a90000;
   --secondary-color: #f1c522;
   --section-bg-color: #f9f9f9;
   --custom-btn-bg-color: #cb7575;
@@ -608,6 +609,7 @@
     flex-direction: column;
     h4 {
       font-size: 2.5rem;
+      font-weight: bold;
       margin-bottom: 0px;
       color: #a90000;
     }
@@ -621,12 +623,26 @@
   }
 }
 
-#section_3 {
-  margin-top: 7%;
+.the-wedding-section {
+  .section-block {
+    .event-name,
+    .address,
+    .time {
+      text-align: center;
+    }
+  }
+}
+
+#section_3,
+#section_4,
+#section_5,
+#section_7 {
+  margin-top: 5%;
 }
 
 .section-title {
   font-size: 2.5rem;
+  margin-bottom: 0px;
 }
 
 .flip-clock {
