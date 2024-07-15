@@ -2,15 +2,15 @@ import React, { useEffect } from "react";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";
 
-import Image1 from "./../images/tooplate/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg";
-import Image2 from "./../images/tooplate/gallery/couple.jpg";
-import Image3 from "./../images/tooplate/gallery/groom-with-bride-are-knocking-glasses-with-champagne.jpg";
-import Image4 from "./../images/tooplate/gallery/bearded-stylish-groom-suit-beautiful-blonde.jpg";
-import Image5 from "./../images/tooplate/gallery/bride-groom-having-their-wedding-with-guests-beach.jpg";
-import Image6 from "./../images/tooplate/gallery/wedding-ceremony-place-nature-outside-summer.jpg";
-import Image7 from "./../images/tooplate/gallery/elegant-young-woman-fashionable.jpg";
-import Image8 from "./../images/tooplate/gallery/young-couple-broke-down-car-while-traveling.jpg";
-import Image9 from "./../images/tooplate/gallery/young-couple-traveling-car-sunny-day.jpg";
+import Image1 from "./../images/tooplate/gallery/Image1.jpeg";
+import Image2 from "./../images/tooplate/gallery/Image2.jpeg";
+import Image3 from "./../images/tooplate/gallery/Image3.jpeg";
+import Image4 from "./../images/tooplate/gallery/Image4.jpeg";
+import Image5 from "./../images/tooplate/gallery/Image5.jpeg";
+import Image6 from "./../images/tooplate/gallery/Image6.jpeg";
+import Image7 from "./../images/tooplate/gallery/Image7.jpeg";
+import Image8 from "./../images/tooplate/gallery/Image8.jpeg";
+import Image9 from "./../images/tooplate/gallery/Image9.jpeg";
 import { auto } from "@popperjs/core";
 
 function Gallery() {
@@ -20,8 +20,6 @@ function Gallery() {
       children: "a",
       showHideAnimationType: "zoom",
       secondaryZoomLevel: "fill",
-      maxZoomLevel: "2",
-
       pswpModule: () => import("photoswipe"),
     });
     lightbox.init();
@@ -59,8 +57,8 @@ function Gallery() {
                   className="popup-image"
                   target="_blank"
                   rel="noreferrer"
-                  data-pswp-width={"1000px"}
-                  data-pswp-height={"1500px"}
+                  data-pswp-width={"900"}
+                  data-pswp-height={"1600"}
                 >
                   <img
                     src={Image1}
@@ -78,8 +76,8 @@ function Gallery() {
                   className="popup-image"
                   target="_blank"
                   rel="noreferrer"
-                  data-pswp-width={"1500px"}
-                  data-pswp-height={"1000px"}
+                  data-pswp-width={"600"}
+                  data-pswp-height={"267"}
                 >
                   <img
                     src={Image2}
@@ -95,8 +93,8 @@ function Gallery() {
                   className="popup-image"
                   target="_blank"
                   rel="noreferrer"
-                  data-pswp-width={"1500px"}
-                  data-pswp-height={"1000px"}
+                  data-pswp-width={"3264"}
+                  data-pswp-height={"2174"}
                 >
                   <img
                     src={Image3}
@@ -114,8 +112,8 @@ function Gallery() {
                   className="popup-image"
                   target="_blank"
                   rel="noreferrer"
-                  data-pswp-width={"1000"}
-                  data-pswp-height={"1500"}
+                  data-pswp-width={"720"}
+                  data-pswp-height={"1280"}
                 >
                   <img
                     src={Image4}
@@ -133,8 +131,8 @@ function Gallery() {
                   className="popup-image"
                   target="_blank"
                   rel="noreferrer"
-                  data-pswp-width={"1500px"}
-                  data-pswp-height={"1001px"}
+                  data-pswp-width={"1600"}
+                  data-pswp-height={"1200"}
                 >
                   <img
                     src={Image5}
@@ -150,8 +148,8 @@ function Gallery() {
                   className="popup-image"
                   target="_blank"
                   rel="noreferrer"
-                  data-pswp-width={"1500"}
-                  data-pswp-height={"1000"}
+                  data-pswp-width={"1280"}
+                  data-pswp-height={"960"}
                 >
                   <img
                     src={Image6}
@@ -169,8 +167,8 @@ function Gallery() {
                   className="popup-image"
                   target="_blank"
                   rel="noreferrer"
-                  data-pswp-width={"1000px"}
-                  data-pswp-height={"1500px"}
+                  data-pswp-width={"576"}
+                  data-pswp-height={"1024"}
                 >
                   <img
                     src={Image7}
@@ -188,8 +186,8 @@ function Gallery() {
                   className="popup-image"
                   target="_blank"
                   rel="noreferrer"
-                  data-pswp-width={"1500px"}
-                  data-pswp-height={"1000px"}
+                  data-pswp-width={"687"}
+                  data-pswp-height={"806"}
                 >
                   <img
                     src={Image8}
@@ -205,8 +203,8 @@ function Gallery() {
                   className="popup-image"
                   target="_blank"
                   rel="noreferrer"
-                  data-pswp-width={"1500"}
-                  data-pswp-height={"1000"}
+                  data-pswp-width={"2174"}
+                  data-pswp-height={"3264"}
                 >
                   <img
                     src={Image9}

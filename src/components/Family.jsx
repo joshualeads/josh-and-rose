@@ -1,7 +1,11 @@
-import Person1 from "./../images/tooplate/people/attractive-laughing-guy-having-fun-smiling-happy.jpg";
-import Person2 from "./../images/tooplate/people/portrait-handsome-attractive-young-man-posing.jpg";
-import Person3 from "./../images/tooplate/people/lifestyle-people-emotions-casual-concept.jpg";
-import Person4 from "./../images/tooplate/people/portrait-beautiful-young-woman-standing-grey-wall.jpg";
+import RoseParents from "./../images/tooplate/people/ArulSelvan_DevaKumari.jpeg";
+import Merlin from "./../images/tooplate/people/Merlin.jpeg";
+
+import JoshParents from "./../images/tooplate/people/DevaDoss_Pushpa.jpeg";
+import Daniel from "./../images/tooplate/people/Daniel.jpeg";
+import Aishu from "./../images/tooplate/people/Aishu.jpeg";
+import Chotu from "./../images/tooplate/people/Chotu.jpeg";
+import Raichel from "./../images/tooplate/people/Raichel.jpeg";
 
 function Family() {
   return (
@@ -38,7 +42,7 @@ function Family() {
                     aria-controls="nav-groomsmen"
                     aria-selected="true"
                   >
-                    <h3>Groom Side</h3>
+                    <h3>Bride Side</h3>
                   </button>
 
                   <button
@@ -51,7 +55,7 @@ function Family() {
                     aria-controls="nav-bridesmaid"
                     aria-selected="false"
                   >
-                    <h3>Bride Side</h3>
+                    <h3>Groom Side</h3>
                   </button>
                 </div>
               </nav>
@@ -69,7 +73,7 @@ function Family() {
                     <div className="col-lg-6 col-12">
                       <div className="people-thumb image-hover-thumb">
                         <img
-                          src={Person1}
+                          src={RoseParents}
                           className="people-image img-fluid"
                           alt=""
                         />
@@ -79,21 +83,23 @@ function Family() {
                     <div className="col-lg-6 col-12">
                       <div className="section-block">
                         <div className="d-flex align-items-center my-3">
-                          <h4 className="mb-0">Kevin</h4>
+                          <h4 className="mb-0">
+                            Rev. G.Arul Selvan and T. Devakumari
+                          </h4>
 
-                          <span className="about-tag ms-2">Cousin</span>
+                          <div className="about-tag ms-2"></div>
                         </div>
 
-                        <p>Thank You!</p>
+                        <p>Dad and Mom</p>
                       </div>
                     </div>
 
                     <div className="col-lg-6 col-12">
                       <div className="people-thumb image-hover-thumb">
                         <img
-                          src={Person2}
+                          src={Merlin}
                           className="people-image img-fluid"
-                          alt=""
+                          alt="Merlin"
                         />
                       </div>
                     </div>
@@ -101,17 +107,17 @@ function Family() {
                     <div className="col-lg-6 col-12">
                       <div className="section-block">
                         <div className="d-flex align-items-center my-3">
-                          <h4 className="mb-0">Wilson</h4>
-
-                          <span className="about-tag ms-2">Best friend</span>
+                          <h4 className="mb-0">Merlin</h4>
+                          <span className="about-tag ms-2"></span>
                         </div>
 
-                        <p>Thank you!</p>
+                        <p>Sister</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                {/* Groom Side Contents */}
                 <div
                   className="tab-pane fade show"
                   id="nav-bridesmaid"
@@ -119,12 +125,13 @@ function Family() {
                   aria-labelledby="nav-bridesmaid-tab"
                 >
                   <div className="row">
+                    {/* Parents */}
                     <div className="col-lg-6 col-12">
                       <div className="people-thumb image-hover-thumb">
                         <img
-                          src={Person3}
+                          src={JoshParents}
                           className="people-image img-fluid"
-                          alt=""
+                          alt="Josh Parents"
                         />
                       </div>
                     </div>
@@ -132,21 +139,24 @@ function Family() {
                     <div className="col-lg-6 col-12">
                       <div className="section-block">
                         <div className="d-flex align-items-center my-3">
-                          <h4 className="mb-0">Jennie</h4>
+                          <h4 className="mb-0">
+                            Rev. L. Devadoss and P. Pushpa
+                          </h4>
 
-                          <span className="about-tag ms-2">Sister</span>
+                          <span className="about-tag ms-2"></span>
                         </div>
 
-                        <p>Thank You!</p>
+                        <p>Dad and Mom</p>
                       </div>
                     </div>
 
+                    {/* Elder Brother */}
                     <div className="col-lg-6 col-12">
                       <div className="people-thumb image-hover-thumb">
                         <img
-                          src={Person4}
+                          src={Daniel}
                           className="people-image img-fluid"
-                          alt=""
+                          alt="Daniel"
                         />
                       </div>
                     </div>
@@ -154,12 +164,81 @@ function Family() {
                     <div className="col-lg-6 col-12">
                       <div className="section-block">
                         <div className="d-flex align-items-center my-3">
-                          <h4 className="mb-0">Madam</h4>
+                          <h4 className="mb-0">Daniel Sukumar</h4>
 
-                          <span className="about-tag ms-2">Friend</span>
+                          {/* <span className="about-tag ms-2">Elder Brother</span> */}
                         </div>
 
-                        <p>Thank You!</p>
+                        <p>Elder Brother</p>
+                      </div>
+                    </div>
+
+                    {/* Sister Inlaw */}
+                    <div className="col-lg-6 col-12">
+                      <div className="people-thumb image-hover-thumb">
+                        <img
+                          src={Aishu}
+                          className="people-image img-fluid"
+                          alt="Aishwarya Rao"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="col-lg-6 col-12">
+                      <div className="section-block">
+                        <div className="d-flex align-items-center my-3">
+                          <h4 className="mb-0">Aishwarya Rao</h4>
+
+                          {/* <span className="about-tag ms-2">Elder Brother</span> */}
+                        </div>
+
+                        <p>Sister-in-law</p>
+                      </div>
+                    </div>
+
+                    {/* Nephew */}
+                    <div className="col-lg-6 col-12">
+                      <div className="people-thumb image-hover-thumb">
+                        <img
+                          src={Chotu}
+                          className="people-image img-fluid"
+                          alt="Aishwarya Rao"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="col-lg-6 col-12">
+                      <div className="section-block">
+                        <div className="d-flex align-items-center my-3">
+                          <h4 className="mb-0">Ezra (Chotu)</h4>
+
+                          {/* <span className="about-tag ms-2">Elder Brother</span> */}
+                        </div>
+
+                        <p>Nephew</p>
+                      </div>
+                    </div>
+
+                    {/* Sister */}
+                    <div className="col-lg-6 col-12">
+                      <div className="people-thumb image-hover-thumb">
+                        <img
+                          src={Raichel}
+                          className="people-image img-fluid"
+                          alt="Aishwarya Rao"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="col-lg-6 col-12">
+                      <div className="section-block">
+                        <div className="d-flex align-items-center my-3">
+                          <h4 className="mb-0">Raichel Priyadharshini</h4>
+
+                          {/* <span className="about-tag ms-2">Elder Brother</span> */}
+                        </div>
+
+                        <p>Sister</p>
                       </div>
                     </div>
                   </div>
