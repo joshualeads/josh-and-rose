@@ -633,11 +633,20 @@
   }
 }
 
-#section_3,
-#section_4,
-#section_5,
-#section_7 {
+#section_3 {
   margin-top: 5%;
+}
+
+#section_4 {
+  margin-top: 0%;
+}
+
+#section_5 {
+  margin-top: 2%;
+}
+
+#section_7 {
+  margin-top: 3%;
 }
 
 .section-title {
@@ -646,8 +655,39 @@
 }
 
 .flip-clock {
+  @-webkit-keyframes fadeinout {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeinout {
+    100% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes shadowBounce {
+    0%,
+    100% {
+      box-shadow: 5px 5px 5px 5px #a24646;
+    }
+    50% {
+      box-shadow: 5px 5px 5px 5px #a32727;
+    }
+  }
+
   margin-top: 2.5rem;
   justify-content: center;
+  //-webkit-animation: fadeinout 1s linear forwards infinite;
+  //animation: fadeinout 1s linear forwards infinite;
   --fcc-flip-duration: 0.5s; /* transition duration when flip card */
   --fcc-spacing: 0.5rem; /* space between unit times and separators */
   --fcc-digit-block-width: 2rem; /* width of digit card */
@@ -658,15 +698,154 @@
   --fcc-digit-color: white; /* color of digit */
   --fcc-label-font-size: 1rem; /* font size of label */
   --fcc-label-color: #ffffff; /* color of label */
-  --fcc-background: black; /* background of digit card */
+  --fcc-background: #a90000; /* background of digit card */
   --fcc-divider-color: white; /* color of divider */
   --fcc-divider-height: 0px; /* height of divider */
   --fcc-separator-size: 6px; /* size of colon */
   --fcc-separator-color: #fff; /* color of colon */
+  //text-shadow: #af4646;
+
+  .fcc__digit_block {
+    opacity: 0.9;
+    //animation: shadowBounce 1s linear forwards infinite;
+  }
 }
 
 .event-complete {
   color: #fff;
   margin-top: 2.5rem;
   display: block;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 0% 6%;
+
+  background: linear-gradient(270deg, #a90000, #161c32);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 0.25s ease infinite;
+  -moz-animation: AnimationName 0.25s ease infinite;
+  animation: AnimationName 0.25s ease infinite;
+  animation: 10s ease-out fadeOut;
+
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    10% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 0.8;
+    }
+    30% {
+      opacity: 0.8;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.6;
+    }
+    60% {
+      opacity: 0.4;
+    }
+    70% {
+      opacity: 0.4;
+    }
+    80% {
+      opacity: 0.2;
+    }
+    90% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    10% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 0.8;
+    }
+    30% {
+      opacity: 0.8;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.6;
+    }
+    60% {
+      opacity: 0.4;
+    }
+    70% {
+      opacity: 0.4;
+    }
+    80% {
+      opacity: 0.2;
+    }
+    90% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .quote-1 {
+    color: #ffc107;
+    text-align: center;
+    display: block;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    text-transform: capitalize;
+  }
+  .quote-2 {
+    color: #fff;
+    font-family: auto;
+  }
 }

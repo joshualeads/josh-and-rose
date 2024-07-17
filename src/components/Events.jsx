@@ -65,7 +65,7 @@ function Events() {
 
               <p className="text-sm-center time">
                 <i className="bi-clock me-1"></i>
-                6:00 PM
+                6:30 PM
               </p>
             </div>
           </div>
@@ -87,7 +87,7 @@ function Events() {
 
               <p className="text-sm-center time">
                 <i className="bi-clock me-1"></i>
-                5:00 PM
+                6:30 PM
               </p>
             </div>
           </div>

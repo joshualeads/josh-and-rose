@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Components
 import Hero from "./components/Hero";
@@ -22,9 +22,11 @@ import "./styles/nuptail/styles.scss";
 
 // Import for tooplate theme usage
 import "./styles/tooplate/styles.scss";
+import Loader from "./components/Loader";
 
 function App() {
   const [toggle, toggleMenu] = useState(false);
+  const [loaded, toggleLoadStatus] = useState(false);
 
   function triggerToggleMenu(event) {
     console.log(event);
@@ -32,7 +34,21 @@ function App() {
     toggleMenu(!toggle);
   }
 
-  return (
+  function changeLoadStatus() {
+    setTimeout(() => {
+      toggleLoadStatus(!loaded);
+    }, 2000);
+  }
+
+  useEffect(() => {
+    if (!loaded) {
+      changeLoadStatus(loaded);
+    }
+  }, [loaded]);
+
+  console.log(loaded);
+
+  return loaded ? (
     <>
       <div className={`App ${toggle ? "fh5co-offcanvas" : ""}`}>
         <div id="fh5co-wrapper" data-bs-spy="scroll">
@@ -55,6 +71,8 @@ function App() {
       </div>
       <ScrollTop />
     </>
+  ) : (
+    <Loader />
   );
 }
 

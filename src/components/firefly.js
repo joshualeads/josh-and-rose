@@ -1,6 +1,6 @@
 import gsap from "gsap";
 
-const FIREFLIES = 30;
+const FIREFLIES = 20;
 
 function FireFly() {
   const maxHeight = document.querySelector(".display-tc")
