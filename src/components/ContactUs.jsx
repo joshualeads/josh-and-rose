@@ -24,8 +24,8 @@ function ContactUs() {
 
               <p>
                 {" "}
-                5th Avenue at, Central Park S,
-                <br /> New York, NY 10019, United States
+                SIMS Residency, Byrathi Layout
+                <br /> Bangalore, KA 560077, India
               </p>
             </div>
 
@@ -37,7 +37,7 @@ function ContactUs() {
               </p>
 
               <p>
-                <a href="tel: 090-080-0760">090-080-0760</a>
+                <a href="tel: +91-7022523272">+91-7022523272</a>
               </p>
             </div>
 

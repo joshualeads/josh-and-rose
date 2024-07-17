@@ -31,13 +31,13 @@ function Header(props) {
                     <a href="#event">When &amp; Where</a>
                   </li>
                   <li>
-                    <a href="#family">Family</a>
+                    <a href="#family">Our Family</a>
                   </li>
                   <li>
-                    <a href="#gallery">Gallery</a>
+                    <a href="#gallery">Our Gallery</a>
                   </li>
                   <li>
-                    <a href="#contact">Contact Us</a>
+                    <a href="#contact">Get in touch</a>
                   </li>
                 </ul>
               </nav>

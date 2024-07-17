@@ -30,17 +30,17 @@ function OffCanvasMenu(props) {
           </li>
           <li>
             <a href="#family" onClick={props.toggleMenu}>
-              Family
+              Our Family
             </a>
           </li>
           <li>
             <a href="#gallery" onClick={props.toggleMenu}>
-              Gallery
+              Our Gallery
             </a>
           </li>
           <li>
             <a href="#contact" onClick={props.toggleMenu}>
-              Contact Us
+              Get in touch
             </a>
           </li>
         </ul>

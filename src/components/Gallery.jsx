@@ -40,7 +40,7 @@ function Gallery() {
           <div className="row">
             <div className="col-lg-12 col-12">
               <div className="section-title-wrap mb-5">
-                <h2 className="section-title">Gallery</h2>
+                <h2 className="section-title">Our Gallery</h2>
 
                 <div className="section-title-bottom">
                   <span className="section-title-line"></span>
