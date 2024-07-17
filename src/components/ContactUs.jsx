@@ -20,7 +20,7 @@ function ContactUs() {
             </div>
 
             <div className="col-lg-4 col-md-6 col-12">
-              <h4 className="mb-4">Visit Us</h4>
+              <p className="mb-4 font-weight-bold">Visit Us</p>
 
               <p>
                 {" "}
@@ -30,10 +30,12 @@ function ContactUs() {
             </div>
 
             <div className="col-lg-4 col-md-6 col-12 my-4 my-lg-0 my-md-0">
-              <h4 className="mb-4">Contact Information</h4>
+              <p className="mb-4 font-weight-bold">Contact Information</p>
 
               <p className="mb-2">
-                <a href="mailto:hello@company.com">hello@company.com</a>
+                <a href="mailto:joshandrose.life@gmail.com">
+                  joshandrose.life@gmail.com
+                </a>
               </p>
 
               <p>
@@ -42,7 +44,7 @@ function ContactUs() {
             </div>
 
             <div className="col-lg-4 col-md-6 col-12">
-              <h4 className="mb-4">Socials</h4>
+              {/* <h4 className="mb-4">Socials</h4>
 
               <ul className="social-icon">
                 <li className="social-icon-item">
@@ -64,7 +66,7 @@ function ContactUs() {
                     className="social-icon-link bi-facebook"
                   ></a>
                 </li>
-              </ul>
+              </ul> */}
 
               {/* <p className="copyright-text mt-3 mb-0">
                 Copyright © 2036 Wedding Lite Co., Ltd.

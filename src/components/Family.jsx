@@ -82,15 +82,19 @@ function Family() {
 
                     <div className="col-lg-6 col-12">
                       <div className="section-block">
-                        <div className="d-flex align-items-center my-3">
-                          <h4 className="mb-0">
+                        <div className="align-items-center my-3 member-name">
+                          <p className="mb-0 text-lg-left text-md-left text-sm-center">
                             Rev. G.Arul Selvan and T. Devakumari
-                          </h4>
+                          </p>
 
-                          <div className="about-tag ms-2"></div>
+                          {/* <div className="about-tag ms-2">
+                            <p className="text-lg-left text-md-left text-sm-center"></p>
+                          </div> */}
                         </div>
 
-                        <p>Dad and Mom</p>
+                        <p className="text-lg-left text-md-left text-sm-center">
+                          Dad and Mom
+                        </p>
                       </div>
                     </div>
 
@@ -106,8 +110,8 @@ function Family() {
 
                     <div className="col-lg-6 col-12">
                       <div className="section-block">
-                        <div className="d-flex align-items-center my-3">
-                          <h4 className="mb-0">Merlin</h4>
+                        <div className="d-flex align-items-center my-3 member-name">
+                          <p className="mb-0">Merlin</p>
                           <span className="about-tag ms-2"></span>
                         </div>
 
@@ -138,10 +142,8 @@ function Family() {
 
                     <div className="col-lg-6 col-12">
                       <div className="section-block">
-                        <div className="d-flex align-items-center my-3">
-                          <h4 className="mb-0">
-                            Rev. L. Devadoss and P. Pushpa
-                          </h4>
+                        <div className="d-flex align-items-center my-3 member-name">
+                          <p className="mb-0">Rev. L. Devadoss and P. Pushpa</p>
 
                           <span className="about-tag ms-2"></span>
                         </div>
@@ -163,8 +165,8 @@ function Family() {
 
                     <div className="col-lg-6 col-12">
                       <div className="section-block">
-                        <div className="d-flex align-items-center my-3">
-                          <h4 className="mb-0">Daniel Sukumar</h4>
+                        <div className="d-flex align-items-center my-3 member-name">
+                          <p className="mb-0">Daniel Sukumar</p>
 
                           {/* <span className="about-tag ms-2">Elder Brother</span> */}
                         </div>
@@ -186,8 +188,8 @@ function Family() {
 
                     <div className="col-lg-6 col-12">
                       <div className="section-block">
-                        <div className="d-flex align-items-center my-3">
-                          <h4 className="mb-0">Aishwarya Rao</h4>
+                        <div className="d-flex align-items-center my-3 member-name">
+                          <p className="mb-0">Aishwarya Rao</p>
 
                           {/* <span className="about-tag ms-2">Elder Brother</span> */}
                         </div>
@@ -209,8 +211,8 @@ function Family() {
 
                     <div className="col-lg-6 col-12">
                       <div className="section-block">
-                        <div className="d-flex align-items-center my-3">
-                          <h4 className="mb-0">Ezra (Chotu)</h4>
+                        <div className="d-flex align-items-center my-3 member-name">
+                          <p className="mb-0">Ezra (Chotu)</p>
 
                           {/* <span className="about-tag ms-2">Elder Brother</span> */}
                         </div>
@@ -232,8 +234,8 @@ function Family() {
 
                     <div className="col-lg-6 col-12">
                       <div className="section-block">
-                        <div className="d-flex align-items-center my-3">
-                          <h4 className="mb-0">Raichel Priyadharshini</h4>
+                        <div className="d-flex align-items-center my-3 member-name">
+                          <p className="mb-0">Raichel Priyadharshini</p>
 
                           {/* <span className="about-tag ms-2">Elder Brother</span> */}
                         </div>

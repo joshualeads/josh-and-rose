@@ -45,20 +45,32 @@ function Couple() {
                 <div className="social-icon-wrap mt-auto">
                   <ul className="social-icon ms-auto">
                     <li className="social-icon-item">
-                      <a href="#" className="social-icon-link bi-facebook"></a>
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100009528203152&mibextid=LQQJ4d"
+                        target="_blank"
+                        className="social-icon-link bi-facebook"
+                      ></a>
                     </li>
 
                     <li className="social-icon-item">
-                      <a href="#" className="social-icon-link bi-twitter"></a>
+                      <a
+                        href="https://mobile.x.com/roselin_159"
+                        target="_blank"
+                        className="social-icon-link bi-twitter"
+                      ></a>
                     </li>
 
                     <li className="social-icon-item">
-                      <a href="#" className="social-icon-link bi-instagram"></a>
+                      <a
+                        href="https://www.instagram.com/94.pink?igsh=aWFqNGMxZHE4ODR1&utm_source=qr"
+                        target="_blank"
+                        className="social-icon-link bi-instagram"
+                      ></a>
                     </li>
 
-                    <li className="social-icon-item">
+                    {/* <li className="social-icon-item">
                       <a href="#" className="social-icon-link bi-whatsapp"></a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -91,20 +103,32 @@ function Couple() {
                 <div className="social-icon-wrap mt-auto">
                   <ul className="social-icon ms-auto">
                     <li className="social-icon-item">
-                      <a href="#" className="social-icon-link bi-facebook"></a>
+                      <a
+                        href="https://www.facebook.com/share/uvDAA45UTVdaEqd7/?mibextid=LQQJ4d"
+                        target="_blank"
+                        className="social-icon-link bi-facebook"
+                      ></a>
                     </li>
 
                     <li className="social-icon-item">
-                      <a href="#" className="social-icon-link bi-twitter"></a>
+                      <a
+                        href="https://mobile.x.com/JoshuaJabakumar"
+                        target="_blank"
+                        className="social-icon-link bi-twitter"
+                      ></a>
                     </li>
 
                     <li className="social-icon-item">
-                      <a href="#" className="social-icon-link bi-instagram"></a>
+                      <a
+                        href="https://www.instagram.com/joshua_jabakumar?igsh=ODFzczNrNjB1M2R4&utm_source=qr"
+                        target="_blank"
+                        className="social-icon-link bi-instagram"
+                      ></a>
                     </li>
 
-                    <li className="social-icon-item">
-                      <a href="#" className="social-icon-link bi-whatsapp"></a>
-                    </li>
+                    {/* <li className="social-icon-item">
+                      <a href="#" target="_blank" className="social-icon-link bi-whatsapp"></a>
+                    </li> */}
                   </ul>
                 </div>
               </div>

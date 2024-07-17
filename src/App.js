@@ -37,7 +37,7 @@ function App() {
   function changeLoadStatus() {
     setTimeout(() => {
       toggleLoadStatus(!loaded);
-    }, 2000);
+    }, 3500);
   }
 
   useEffect(() => {

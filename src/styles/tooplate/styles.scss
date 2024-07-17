@@ -850,3 +850,22 @@
     text-align: center;
   }
 }
+
+.people-section {
+  .member-name {
+    justify-content: center;
+    p {
+      font-weight: bold;
+    }
+  }
+  .about-tag p {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
