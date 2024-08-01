@@ -11,6 +11,9 @@ import Image6 from "./../images/tooplate/gallery/Image6.jpeg";
 import Image7 from "./../images/tooplate/gallery/Image7.jpeg";
 import Image8 from "./../images/tooplate/gallery/Image8.jpeg";
 import Image9 from "./../images/tooplate/gallery/Image9.jpeg";
+import Image10 from "./../images/tooplate/gallery/Image10.jpeg";
+import Image11 from "./../images/tooplate/gallery/Image11.jpeg";
+
 import { auto } from "@popperjs/core";
 
 function Gallery() {
@@ -57,8 +60,8 @@ function Gallery() {
                   className="popup-image"
                   target="_blank"
                   rel="noreferrer"
-                  data-pswp-width={"900"}
-                  data-pswp-height={"1600"}
+                  data-pswp-width={"507"}
+                  data-pswp-height={"737"}
                 >
                   <img
                     src={Image1}
@@ -89,15 +92,70 @@ function Gallery() {
 
               <div className="gallery-thumb gallery-thumb-small image-hover-thumb">
                 <a
-                  href={Image3}
+                  href={Image8}
                   className="popup-image"
                   target="_blank"
                   rel="noreferrer"
-                  data-pswp-width={"3264"}
-                  data-pswp-height={"2174"}
+                  data-pswp-width={"687"}
+                  data-pswp-height={"806"}
                 >
                   <img
-                    src={Image3}
+                    src={Image8}
+                    className="gallery-image img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-12">
+              <div className="gallery-thumb gallery-thumb-small image-hover-thumb">
+                <a
+                  href={Image9}
+                  className="popup-image"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-pswp-width={"720"}
+                  data-pswp-height={"1280"}
+                >
+                  <img
+                    src={Image9}
+                    className="gallery-image img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-12 d-flex flex-column">
+              <div className="gallery-thumb image-hover-thumb">
+                <a
+                  href={Image7}
+                  className="popup-image"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-pswp-width={"576"}
+                  data-pswp-height={"1024"}
+                >
+                  <img
+                    src={Image7}
+                    className="gallery-image img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div className="gallery-thumb gallery-thumb-small image-hover-thumb">
+                <a
+                  href={Image6}
+                  className="popup-image"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-pswp-width={"1280"}
+                  data-pswp-height={"720"}
+                >
+                  <img
+                    src={Image6}
                     className="gallery-image img-fluid"
                     alt=""
                   />
@@ -125,6 +183,24 @@ function Gallery() {
             </div>
 
             <div className="col-lg-4 col-12 d-flex flex-column">
+              {/* Image 3 */}
+              <div className="gallery-thumb gallery-thumb-small image-hover-thumb">
+                <a
+                  href={Image3}
+                  className="popup-image"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-pswp-width={"3264"}
+                  data-pswp-height={"2174"}
+                >
+                  <img
+                    src={Image3}
+                    className="gallery-image img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+
               <div className="gallery-thumb gallery-thumb-small image-hover-thumb">
                 <a
                   href={Image5}
@@ -136,78 +212,6 @@ function Gallery() {
                 >
                   <img
                     src={Image5}
-                    className="gallery-image img-fluid"
-                    alt=""
-                  />
-                </a>
-              </div>
-
-              <div className="gallery-thumb gallery-thumb-small image-hover-thumb">
-                <a
-                  href={Image6}
-                  className="popup-image"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-pswp-width={"1280"}
-                  data-pswp-height={"960"}
-                >
-                  <img
-                    src={Image6}
-                    className="gallery-image img-fluid"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-12">
-              <div className="gallery-thumb image-hover-thumb">
-                <a
-                  href={Image7}
-                  className="popup-image"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-pswp-width={"576"}
-                  data-pswp-height={"1024"}
-                >
-                  <img
-                    src={Image7}
-                    className="gallery-image img-fluid"
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-12 d-flex flex-column">
-              <div className="gallery-thumb gallery-thumb-small image-hover-thumb">
-                <a
-                  href={Image8}
-                  className="popup-image"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-pswp-width={"687"}
-                  data-pswp-height={"806"}
-                >
-                  <img
-                    src={Image8}
-                    className="gallery-image img-fluid"
-                    alt=""
-                  />
-                </a>
-              </div>
-
-              <div className="gallery-thumb gallery-thumb-small image-hover-thumb">
-                <a
-                  href={Image9}
-                  className="popup-image"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-pswp-width={"2174"}
-                  data-pswp-height={"3264"}
-                >
-                  <img
-                    src={Image9}
                     className="gallery-image img-fluid"
                     alt=""
                   />

@@ -8,6 +8,7 @@ import Couple from "./components/Couple";
 import Events from "./components/Events";
 import Family from "./components/Family";
 import Gallery from "./components/Gallery";
+//import Locations from "./components/Locations";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import ScrollTop from "./components/ScrollTop";
@@ -37,7 +38,7 @@ function App() {
   function changeLoadStatus() {
     setTimeout(() => {
       toggleLoadStatus(!loaded);
-    }, 3500);
+    }, 500);
   }
 
   useEffect(() => {
@@ -59,6 +60,7 @@ function App() {
             <Events />
             <Family />
             <Gallery />
+            {/* <Locations /> */}
             <ContactUs />
             <OffCanvasMenu
               toggleMenu={triggerToggleMenu}
@@ -72,7 +74,7 @@ function App() {
       <ScrollTop />
     </>
   ) : (
-    <Loader />
+    <div>{/* <Loader /> */}</div>
   );
 }
 
