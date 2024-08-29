@@ -19,7 +19,7 @@ class FlipperCountDown extends Component {
     return (
       <>
         <FlipClockCountdown
-          to={new Date("2024-08-30")}
+          to={new Date("August 30, 2024 11:30:00")}
           className={"flip-clock"}
         >
           <Completed />
